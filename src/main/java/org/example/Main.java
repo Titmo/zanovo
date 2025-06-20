@@ -19,6 +19,17 @@ public class Main {
         employeeBook.salaryLess(80_000);
         employeeBook.salaryHigher(80_000);
 
+        System.out.println("employeeBook.createEmployee(\"пупок\",90_900,2) = " + employeeBook.createEmployee("пупок", 90_900, 2));
+        employeeBook.allStaff();
+        employeeBook.deleteByFIO("пупок");
+        employeeBook.deleteById(4);
+        System.out.println("employeeBook.createEmployee(\"пупок\",90_900,2) = " + employeeBook.createEmployee("пупок", 90_900, 2));
+        employeeBook.replaceSalaryOrDep("пупок",3);
+        employeeBook.allStaff();
+        System.out.println();
+        employeeBook.replaceSalaryOrDep("пупок",30_000);
+        employeeBook.allStaff();
+        employeeBook.employeesByDepartment();
     }
 
 
